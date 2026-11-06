@@ -88,26 +88,26 @@
 
 ///////////////////////////
 
-const lista = document.getElementById("lista");
+// const lista = document.getElementById("lista");
 
-function adicionarItem() {
-    const novoItem = document.createElement("li"); //.createElement cria um conteudo novo
+// function adicionarItem() {
+//     const novoItem = document.createElement("li"); //.createElement cria um conteudo novo 
 
-    novoItem.textContent = "Novo Item às " + new Date().toLocaleTimeString(); // new "novo" / date "data" / .tolocaleTimeString - puxa a data do computador
+//     novoItem.textContent = "Novo Item às " + new Date().toLocaleTimeString(); // new "novo" / date "data" / .tolocaleTimeString - puxa a data do computador
 
-    lista.appendChild(novoItem); // pai chama o filho
-}
+//     lista.appendChild(novoItem); // pai chama o filho
+// }
 
-function removerUltimo() {
-    const ultimo = lista.lastElementChild //puxa o ultimo filho do elemento
+// function removerUltimo() {
+//     const ultimo = lista.lastElementChild //puxa o ultimo filho do elemento
 
-    if (ultimo) {
-        lista.removeChild(ultimo);
-        console.log("Último filho removido");
-    } else {
-        console.log("Lista vazia. Nada a remover.");
-    }
-}
+//     if (ultimo) {
+//         lista.removeChild(ultimo);
+//         console.log("Último filho removido");
+//     } else {
+//         console.log("Lista vazia. Nada a remover.");
+//     }
+// }
 
-document.getElementById("btn-add").addEventListener("click", adicionarItem);
-document.getElementById("btn-remover").addEventListener("click", removerUltimo);
+// document.getElementById("btn-add").addEventListener("click", adicionarItem);
+// document.getElementById("btn-remover").addEventListener("click", removerUltimo);
